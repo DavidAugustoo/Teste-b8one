@@ -35,6 +35,10 @@
     color: var(--neltral-dark);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     width: 100vw;
 }
@@ -172,9 +176,16 @@ div.scrollmenu a {
 
 /* SECTION BANNER-PRODUCT*/
 
+#banner-product {
+    border-top: 1px solid var(--netral-light-hover);
+    padding-top: 24px;
+}
+
 #banner-product .container {
     display: grid;
     gap: 24px;
+    border-bottom: 1px solid var(--netral-light-hover);
+    padding-bottom: 47px;
     grid-template-areas: 
     "photo photo title"
     "photo photo desc"
@@ -242,12 +253,13 @@ div.scrollmenu a {
     padding: 10px 0px;
 }
 
-.product-desc .color-border {
+.product-desc .item {
     width: 40px;
     height: 40px;
     border: 2px solid var(--neltral-medium-light);
     border-radius: 100%;
     padding: 3px;
+    cursor: pointer;
 }
 
 .product-desc .gray {
@@ -286,10 +298,10 @@ div.scrollmenu a {
 .size {
     padding: 12px 24px;
     background-color: transparent;
-    border: 2px solid var(--neltral-medium-light);
+    border: 1px solid var(--neltral-medium-light);
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .size.disable {
@@ -357,18 +369,19 @@ div.scrollmenu a {
 
 .product-price .price-quantity .counter {
     display: flex;
+    align-items: center;
     gap: 32px;
-    padding: 12px;
+    padding: 4px 12px;
     font-size: var(--large-paragraph);
     font-weight: 500;
-    border: 1px solid var(--neltral-medium);
+    border: 1px solid var(--neltral-light);
     border-radius: 4px;
 }
 
 .product-price .price-quantity .counter button {
     background-color: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 32px;
     color: var(--brand-green-default);
 }
 
@@ -505,5 +518,13 @@ div.scrollmenu a {
 }
 
 @media (max-width: 576px) {
-   
+    .price-quantity-desc-item {
+        font-size: var(--medium-paragraph);
+    }
+}
+
+@media (max-width: 375px) {
+    .price-quantity-desc-item {
+        font-size: var(--small-paragraph);
+    }
 }
