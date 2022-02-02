@@ -142,3 +142,30 @@ div.scrollmenu a {
     text-decoration: none;
 }
 
+/* SECTION BREADCRUMB*/
+
+#breadcrumb ul {
+    display: flex;
+    list-style: none;
+}
+
+#breadcrumb ul li {
+    display: flex;
+    align-items: center;
+    padding: 12px 4px;
+}
+
+#breadcrumb ul li:last-child {
+    color: var(--brand-orange-default);
+}
+
+#breadcrumb ul li a{ 
+    text-decoration: none;
+    color: var(--small-paragraph);
+    font-weight: 500;
+}
+
+#breadcrumb ul li img {
+    width: 30px;
+    height: 30px;
+}
