@@ -1,2 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+:root {
+    --brand-green-default: #40B25C;
+    --brand-green-default-light: #53CC71;
+    --brand-green-default-dark: #2D8A44;
+    --brand-orange-default: #E36305;
+    --brand-orange-default-light: #FF8861;
+    --brand-orange-default-dark: #80351D;
+    --feedback-default: #E63737;
+    --feedback-default-light: #F6CBCB;
+    --feedback-light: #F6CBCB;
+    --neltral-dark: #030303;
+    --neltral-medium: #40464D;
+    --neltral-medium-light: #CFD1D2;
+    --neltral-light: #9FA3A6;
+    --netral-light-hover: #E9E9E9;
+
+    --large-paragraph: 16px;
+    --medium-paragraph: 14px;
+    --small-paragraph: 12px;
+    --placeholder: 16px;
+    --cta: 16px;
+
+    --product-gray: #595961;
+    --product-salmon: #FFD1C2;
+    --product-silver: #C8C8CF;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--neltral-dark);
+}
+
+header {
+    width: 100vw;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+header .container .input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 902px;
+    height: 46px;
+    border: 1px solid var(--neltral-light);
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+header .container .input-container input {
+    font-size: var(--large-paragraph);
+    border: none;
+    color: var(--neltral-medium);
+    font-weight: 500;
+    width: 100%;
+}
+
+header .container .input-container input:focus{
+    outline: none;
+}
+
+header .container button {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    transition: all 0.5s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header .container button:hover {
+    background-color: var(--netral-light-hover);
+}
+
+header .container button img {
+    margin-right: 8px;
+}
+
+header .menu-icon {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+header .search-container {
+    display: none;
+}
+
+header .container .bag-container {
+    position: relative;
+}
+
+
+header .container .bag-container span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--brand-orange-default);
+    color: white;
+    font-size: var(--small-paragraph);
+    border-radius: 100%;
+    position: absolute;
+    right: -7px;
+    top: -5px;
+}
 
