@@ -124,3 +124,21 @@ header .container .bag-container span{
     top: -5px;
 }
 
+/* SECTION MENU */
+
+div.scrollmenu {
+    display: flex;
+    justify-content: center;
+    background-color: var(--neltral-dark);
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
