@@ -481,6 +481,15 @@ div.scrollmenu a {
     font-size: var(--small-paragraph);
 }
 
+/* SECTION BANNER-SHEIF*/
+
+.banner-sheif {
+    margin-top: 64px;
+}
+
+.banner-sheif-img {
+    width: 100%;
+}
 
 
 /* MEDIA QUERIES */
